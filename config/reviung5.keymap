@@ -15,6 +15,10 @@
 //     chain-length = <4>;
 // };
 
+&led_strip {
+  chain-length = <4>;
+};
+
 #define BASE 0
 #define BLE 1
 
@@ -22,6 +26,9 @@
         // chosen {	  
         //         zmk,underglow = &led_strip;	   
         // };
+        chosen {
+            zmk,underglow = &led_strip;
+        };
 
         keymap {
             compatible = "zmk,keymap";
