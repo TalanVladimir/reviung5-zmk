@@ -31,7 +31,7 @@
               label = "BLE";
               bindings = <
                 // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-                     &trans     &out OUT_TOG   &bt BT_PRV    &bt BT_NXT    &bt BT_CLR
+                     &trans     &bt BT_PRV    &out OUT_TOG  &bt BT_NXT    &bt BT_CLR
                 // ╰─────────────┴─────────────┴─────────────┴─────────────┴─────────────╯
               >;
             };
