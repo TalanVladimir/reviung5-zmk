@@ -15,6 +15,8 @@
 //     chain-length = <4>;
 // };
 
+
+
 &led_strip {
   chain-length = <4>;
 };
@@ -27,7 +29,9 @@
         //         zmk,underglow = &led_strip;	   
         // };
         chosen {
-            zmk,underglow = &led_strip;
+            zmk,underglow = {
+              chain-length = <4>;
+            };
         };
 
         keymap {
