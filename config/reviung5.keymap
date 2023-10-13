@@ -128,7 +128,7 @@
                &trans   &kp LBKT   &kp F   &kp RBKT   &bt KP_EQUAL
           // ╰────────┴──────────┴───────┴──────────┴──────────────╯
         >;
-        sensor-bindings = <&inc_dec_kp LBKT RBKT>;
+        // sensor-bindings = <&inc_dec_kp LBKT RBKT>;
       };
 
       linux_layer {
@@ -138,7 +138,7 @@
                &trans   &sleep_10   &sleep_20   &sleep_30   &sleep_60
           // ╰────────┴───────────┴───────────┴───────────┴───────────╯
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
       };
 
       ble_layer {
@@ -148,7 +148,7 @@
                &trans   &td_bt0   &td_bt1   &td_bt2   &td_bt3
           // ╰────────┴─────────┴─────────┴─────────┴─────────╯
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
       };
   };
 };
