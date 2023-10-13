@@ -57,13 +57,13 @@
       bindings = <&bt BT_SEL 3>, <&out OUT_TOG>, <&bt BT_CLR>;
     };
 
-    td_bt_tog: tap_dance_bt_tog {
-      compatible = "zmk,behavior-tap-dance";
-      label = "TAP_DANCE_BT_TOG";
-      #binding-cells = <0>;
-      tapping-term-ms = <200>;
-      bindings = <&out OUT_TOG>, <&bt BT_CLR>;
-    };
+    // td_bt_tog: tap_dance_bt_tog {
+    //   compatible = "zmk,behavior-tap-dance";
+    //   label = "TAP_DANCE_BT_TOG";
+    //   #binding-cells = <0>;
+    //   tapping-term-ms = <200>;
+    //   bindings = <&out OUT_TOG>, <&bt BT_CLR>;
+    // };
   };
 
   macros {
@@ -125,7 +125,7 @@
         label = "TRACK";
         bindings = <
           // ╭────────┬──────────┬───────┬──────────┬──────────────╮
-               &trans   &kp LBKT   &kp F   &kp RBKT   &bt KP_EQUAL
+               &trans   &kp LBKT   &kp F   &kp RBKT   &kp KP_EQUAL
           // ╰────────┴──────────┴───────┴──────────┴──────────────╯
         >;
         // sensor-bindings = <&inc_dec_kp LBKT RBKT>;
