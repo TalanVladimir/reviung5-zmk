@@ -22,7 +22,7 @@
       label = "TAP_DANCE_MO";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&mo TRACK>, <&mo TRACK>, <&mo BLE>;
+      bindings = <&mo TRACK>, <&mo LINUX>, <&mo BLE>;
     };
 
     td_bt0: tap_dance_bt0 {
@@ -72,9 +72,9 @@
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
-        = <&macro_press &kp LCTRL>
-        , <&macro_tap &kp PAGE_DOWN>
-        , <&macro_release &kp LCTRL>;
+        = <&macro_tap &kp LC(LA(T))>
+        , <&macro_wait_time 3000>
+        , <&macro_tap &kp ENTER>;
     };
 
     sleep_20: sleep_20 {
