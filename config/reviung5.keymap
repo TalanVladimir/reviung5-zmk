@@ -30,7 +30,7 @@
       label = "TAP_DANCE_BT0";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&bt BT_SEL 0>, &bt BT_CLR>;
+      bindings = <&bt BT_SEL 0>, <&bt BT_CLR>;
     };
 
     td_bt1: tap_dance_bt1 {
@@ -38,7 +38,7 @@
       label = "TAP_DANCE_BT1";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&bt BT_SEL 1>, &bt BT_CLR>;
+      bindings = <&bt BT_SEL 1>, <&bt BT_CLR>;
     };
 
     td_bt2: tap_dance_bt2 {
@@ -46,7 +46,7 @@
       label = "TAP_DANCE_BT2";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&bt BT_SEL 2>, &bt BT_CLR>;
+      bindings = <&bt BT_SEL 2>, <&bt BT_CLR>;
     };
 
     td_bt_tog: tap_dance_bt_tog {
@@ -54,7 +54,7 @@
       label = "TAP_DANCE_BT_TOG";
       #binding-cells = <0>;
       tapping-term-ms = <200>;
-      bindings = <&out OUT_TOG>, &bt BT_CLR>;
+      bindings = <&out OUT_TOG>, <&bt BT_CLR>;
     };
   };
 
