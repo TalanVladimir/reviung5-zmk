@@ -38,8 +38,11 @@
         , <&macro_tap &kp T>
         , <&macro_release &kp LCTRL &kp LALT>
         , <&macro_tap_time 1000>
-        , <&kp S &kp H &kp U &kp T &kp D &kp O &kp W &kp N &kp SPACE &kp MINUS &kp H &kp MINUS &kp T &kp KP_NUMBER_3 &kp KP_NUMBER_0>
-        , <&macro_tap_time 1000>
+        , <&kp S &kp H &kp U &kp T &kp D &kp O &kp W &kp N &kp SPACE &kp MINUS &kp P &kp SPACE &kp KP_NUMBER_3 &kp KP_NUMBER_0>
+        , <&macro_tap_time 500>
+        , <&macro_tap &kp ENTER>
+        , <&kp E &kp X &kp I &kp T>
+        , <&macro_tap_time 500>
         , <&macro_tap &kp ENTER>;
     };
 
@@ -51,8 +54,13 @@
         = <&macro_press &kp LCTRL &kp LALT>
         , <&macro_tap &kp T>
         , <&macro_release &kp LCTRL &kp LALT>
-        // , <&macro_tap &kp ENTER>
-        , <&macro_release &kp LCTRL>;
+        , <&macro_tap_time 1000>
+        , <&kp S &kp H &kp U &kp T &kp D &kp O &kp W &kp N &kp SPACE &kp MINUS &kp P &kp SPACE &kp KP_NUMBER_6 &kp KP_NUMBER_0>
+        , <&macro_tap_time 500>
+        , <&macro_tap &kp ENTER>
+        , <&kp E &kp X &kp I &kp T>
+        , <&macro_tap_time 500>
+        , <&macro_tap &kp ENTER>;
     };
   };
 
