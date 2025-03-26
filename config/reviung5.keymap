@@ -10,9 +10,6 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 
-// HELPERS
-#include "helpers/combos.keymap"
-
 #define BASE 0
 #define TRACK 1
 #define BLE 2
@@ -26,14 +23,6 @@
       tapping-term-ms = <200>;
       bindings = <&mo TRACK>, <&mo BLE>;
     };
-  };
-
-  combos {
-    compatible = "zmk,combos";
-    
-    // ESC
-    // COMBO_ALL(esc_one_two, &kp ESC, 1 2)
-    // COMBO_ALL(esc_null_one, &kp ESC, 9 10)
   };
 
   keymap {
