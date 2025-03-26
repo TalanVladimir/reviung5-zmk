@@ -28,42 +28,6 @@
     };
   };
 
-  macros {
-    sleep_30: sleep_30 {
-      label = "ZM_tab_sleep_30";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp LCTRL &kp LALT>
-        , <&macro_tap &kp T>
-        , <&macro_release &kp LCTRL &kp LALT>
-        , <&macro_tap_time 1000>
-        , <&kp S &kp H &kp U &kp T &kp D &kp O &kp W &kp N &kp SPACE &kp MINUS &kp P &kp SPACE &kp KP_NUMBER_3 &kp KP_NUMBER_0>
-        , <&macro_tap_time 500>
-        , <&macro_tap &kp ENTER>
-        , <&kp E &kp X &kp I &kp T>
-        , <&macro_tap_time 500>
-        , <&macro_tap &kp ENTER>;
-    };
-
-    sleep_60: sleep_60 {
-      label = "ZM_tab_sleep_60";
-      compatible = "zmk,behavior-macro";
-      #binding-cells = <0>;
-      bindings
-        = <&macro_press &kp LCTRL &kp LALT>
-        , <&macro_tap &kp T>
-        , <&macro_release &kp LCTRL &kp LALT>
-        , <&macro_tap_time 1000>
-        , <&kp S &kp H &kp U &kp T &kp D &kp O &kp W &kp N &kp SPACE &kp MINUS &kp P &kp SPACE &kp KP_NUMBER_6 &kp KP_NUMBER_0>
-        , <&macro_tap_time 500>
-        , <&macro_tap &kp ENTER>
-        , <&kp E &kp X &kp I &kp T>
-        , <&macro_tap_time 500>
-        , <&macro_tap &kp ENTER>;
-    };
-  };
-
   combos {
     compatible = "zmk,combos";
     
@@ -86,7 +50,7 @@
                &td_mo   &kp C_PREVIOUS   &kp C_PLAY_PAUSE   &kp C_NEXT   &kp C_MUTE
           // ╰────────┴────────────────┴──────────────────┴────────────┴────────────╯
         >;
-        sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
+        // sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
       };
 
       track_layer {
@@ -96,7 +60,7 @@
                &trans   &kp LEFT   &kp F   &kp RIGHT   &kp KP_EQUAL
           // ╰────────┴──────────┴───────┴───────────┴──────────────╯
         >;
-        sensor-bindings = <&inc_dec_kp LBKT RBKT>;
+        // sensor-bindings = <&inc_dec_kp LBKT RBKT>;
       };
 
       ble_layer {
@@ -106,7 +70,7 @@
                &trans   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3
           // ╰────────┴──────────────┴──────────────┴──────────────┴──────────────╯
         >;
-        sensor-bindings = <&inc_dec_kp sleep_30 sleep_60>;
+        // sensor-bindings = <&inc_dec_kp sleep_30 sleep_60>;
       };
   };
 };
