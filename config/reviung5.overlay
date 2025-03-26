@@ -2,8 +2,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <physical_layouts.dtsi>
 
-#include "reviung5.dtsi"
-
 &pinctrl {
   spi3_default: spi3_default {
     group1 {
