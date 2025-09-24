@@ -34,6 +34,7 @@
                 , <&macro_tap &kp LS(SPACE)>
                 , <&macro_wait_time 500>
                 , <&macro_tap &kp LC(KP_MINUS)>;
+    }
   };
 
   keymap {
