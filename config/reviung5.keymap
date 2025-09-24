@@ -9,6 +9,11 @@
 #define BLE 2
 
 / {
+
+  macros {
+          #include "os/macros.keymap"
+  };
+
   keymap {
       compatible = "zmk,keymap";
 
@@ -25,7 +30,7 @@
         label = "TRACK";
         bindings = <
           // ╭───────┬──────────┬────────┬───────────┬─────────╮
-               &kp F   &kp LEFT   &trans   &kp RIGHT   &mo BLE
+               &kp F   &kp LEFT   &trans   &kp RIGHT   &use_reserve
           // ╰───────┴──────────┴────────┴───────────┴─────────╯
         >;
       };
