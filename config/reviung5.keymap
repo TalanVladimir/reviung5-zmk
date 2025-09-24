@@ -7,7 +7,6 @@
 #define BASE 0
 #define TRACK 1
 #define BLE 2
-#define CLEAR 3
 
 / {
   keymap {
@@ -35,17 +34,8 @@
         label = "BLE";
         bindings = <
           // ╭───────────┬──────────────┬──────────────┬──────────────┬────────╮
-               &mo CLEAR   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &trans
+               &trans      &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &trans
           // ╰───────────┴──────────────┴──────────────┴──────────────┴────────╯
-        >;
-      };
-
-      clear_layer {
-        label = "CLEAR";
-        bindings = <
-          // ╭────────┬──────────┬──────────┬──────────┬────────────╮
-               &trans   &mkp MB1   &mkp MB2   &mkp MB3   &bt BT_CLR
-          // ╰────────┴──────────┴──────────┴──────────┴────────────╯
         >;
       };
   };
